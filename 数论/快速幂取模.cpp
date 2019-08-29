@@ -1,5 +1,4 @@
-//快速幂取模 
-typedef long long ll;
+ typedef long long ll;
 
 ll mod_pow(ll x,ll n,ll mod) 
 {
@@ -7,9 +6,9 @@ ll mod_pow(ll x,ll n,ll mod)
 	x%=mod;
     while(n>0)
     {
-        if(n&1)res= res * x%mod; //如果二进制最低位为1，则乘上x^（2^i）
+        if(n&1)res= res * x%mod; 
         
-        x=x*x%mod;    //将x平方 
+        x=x*x%mod;    
         
         n>>=1;      
     }

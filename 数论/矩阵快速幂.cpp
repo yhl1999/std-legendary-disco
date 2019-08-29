@@ -1,7 +1,7 @@
 struct Matrix{
-	int a[10][10];  //从a[1][1]开始存
-	int x,y;      //矩阵的行数和列数 
-	Matrix operator* (Matrix b)   //矩阵乘法左矩阵的列数等于右矩阵的行数	
+	int a[10][10];  
+	int x,y;      
+	Matrix operator* (Matrix b)   	
 	{
 		Matrix ans;
 		memset(ans.a,0,sizeof(ans.a));
@@ -28,5 +28,5 @@ Matrix Mpow(Matrix a,int b)
 		a=a*a;
 		b>>=1;
 	} 
-	return ans;  //ans=a^b;
+	return ans;  
 }
