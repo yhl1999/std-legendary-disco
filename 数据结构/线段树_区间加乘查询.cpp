@@ -16,8 +16,8 @@ void buildtree(int root, int l, int r){
     }
     else{
         int m=(l+r)/2;
-        bt(root*2, l, m);
-        bt(root*2+1, m+1, r);
+        buildtree(root*2, l, m);
+        buildtree(root*2+1, m+1, r);
         st[root].v=st[root*2].v+st[root*2+1].v;
     }
     st[root].v%=p;
