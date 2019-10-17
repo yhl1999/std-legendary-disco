@@ -6,6 +6,7 @@ This is a library for stdu-Acmer.
 2.注意non-negative integers之类的能表示数据范围的词汇.
 3.读清题意！读清题意！读清题意！
 4.计数题可以往贡献方面想
+5.数论题、模拟题、处理非常复杂的题不要随便碰
 
 提交之前检查事项：
 1.int改为long long
